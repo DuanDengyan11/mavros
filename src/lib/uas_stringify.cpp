@@ -183,7 +183,8 @@ static inline bool is_apm_copter(UAS::MAV_TYPE type)
 	       type == UAS::MAV_TYPE::HEXAROTOR ||
 	       type == UAS::MAV_TYPE::OCTOROTOR ||
 	       type == UAS::MAV_TYPE::TRICOPTER ||
-	       type == UAS::MAV_TYPE::COAXIAL;
+	       type == UAS::MAV_TYPE::COAXIAL ||
+		   type == UAS::MAV_TYPE::HELICOPTER;
 }
 
 std::string UAS::str_mode_v10(uint8_t base_mode, uint32_t custom_mode)
